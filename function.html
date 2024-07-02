@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .heading {
+      text-align: center;
+      background-color: gray;
+      color: #fff;
+    }
+    h1 {
+      background-color: lightseagreen;
+    }
+  </style>
+  <body>
+    <dev class="heading">
+      <h1>Functions</h1>
+      <br />
+    </dev>
+    <!-- JavaScripting Start Here -->
+    <script>
+      "use strict";
+      // function fruitProcessor(x, y) {
+      //   let apples = x;
+      //   let oranges = y;
+      //   console.log(apples, oranges);
+      //   const juice = `Juice with ${apples} apples and ${oranges}
+      //   oranges.`;
+      //   console.log(juice);
+      //   return juice;
+      // }
+      // const x = prompt("Please insert the value of X");
+      // const y = prompt("Please insert the value of y");
+      // fruitProcessor(x, y);
+
+      function age(myYear) {
+        const thisYear = 2024 - myYear;
+        console.log(thisYear);
+        return thisYear;
+      }
+
+      let myYear = prompt("Please enter your year");
+      age(myYear);
+    </script>
+  </body>
+</html>
