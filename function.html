@@ -40,14 +40,38 @@
       // const y = prompt("Please insert the value of y");
       // fruitProcessor(x, y);
 
-      function age(myYear) {
-        const thisYear = 2024 - myYear;
-        console.log(thisYear);
-        return thisYear;
+      // function age(myYear) {
+      //   const thisYear = 2024 - myYear;
+      //   return thisYear;
+      // }
+
+      // let myYear = prompt("Please enter your year");
+      // const birthYear = age(myYear);
+      // console.log(birthYear);
+
+      function age(any) {
+        const age = 2024 - any;
+        return age;
+      }
+      // Programme start here.
+      let myAge = age(prompt("Enter your birth year"));
+      let wifeAge = age(prompt("Enter your wife birth year"));
+
+      console.log(
+        `The man age is ${myAge} and woman age is ${wifeAge}. The age difference between you and wify is ${
+          myAge - wifeAge
+        } years.`
+      );
+
+      if (myAge > wifeAge && wifeAge > 10) {
+        console.log(`My man you choose well`);
+      } else {
+        console.log(`My man you choose mate`);
       }
 
-      let myYear = prompt("Please enter your year");
-      age(myYear);
+      if (wifeAge > myAge && myAge > 10) {
+        console.log(`man your wife is a coger`);
+      }
     </script>
   </body>
 </html>
